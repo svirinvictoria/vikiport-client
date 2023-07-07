@@ -9,6 +9,7 @@ export const useProxy = (props) => {
             // console.log("Entering fetch")
             const weatherAsArray = await fillWeather.json();
             const weatherAsString = JSON.stringify(weatherAsArray)
+            console.log( weatherAsString);
             return  weatherAsString;
         } catch (error){
             // console.log("Entering error")
@@ -46,7 +47,7 @@ export const useProxy = (props) => {
             return "Can't get cartoon info"
         }
     }
-    
+
 
     return {updateWeatherPr:updateWeatherPr, 
         updateForexPr:updateForexPr, 

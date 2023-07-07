@@ -19,7 +19,9 @@ function App() {
       const cartoonCollection = await proxy.updateCartoonPr();//getting cartoons collection from the server
       
       const cartoonItem = cartoonCollection&& cartoonCollection.map((singleCartoon)=>{ //getting single cartoon from the collection
-        return <div>{singleCartoon.name}</div>
+        return <div>
+          {singleCartoon.name}
+          {singleCartoon.image}</div>
       });
       setCartoon(cartoonItem);
       console.log(cartoonItem);
@@ -27,11 +29,7 @@ function App() {
     fetchData();
   }, []);
 
-  const getWeatherData =(weather)=>{
-    const unpackWeather = weather.data;
-    console.log(unpackWeather);
-    return unpackWeather;
-  }
+ 
   
 
   return (
@@ -46,6 +44,7 @@ function App() {
           <div className="cartoon-item">
             {cartoon}
           </div>
+          
         </div>
         <div className="info-box">
           <div className="info-weather info-item">

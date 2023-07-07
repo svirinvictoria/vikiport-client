@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import { useProxy } from './useProxi';
 import './App.css';
+import forecast from "./img/forecast.png";
+import forex_img from "./img/forex.png"
 
 function App() {
   const proxy = useProxy()
@@ -47,14 +49,23 @@ function App() {
           
         </div>
         <div className="info-box">
-          <div className="info-weather info-item">
+          <div className="info-weather info-item info-text-weather">
+            <div> <img src={forecast} className='bcg'/></div>
             {weather}
           </div>
-          <div className="info-forex info-item">
+          <div className="info-forex info-item info-text-forex">
+            <div> <img src={forex_img} className='bcg'/></div>
             {forex}
           </div>
         </div>
       </div>
+      <footer>
+        <p>
+        <a href="https://www.flaticon.com/free-icons/forex" title="forex icons">Forex icons created by juicy_fish - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/foggy" title="foggy icons">Foggy icons created by Freepik - Flaticon</a><a href="https://www.flaticon.com/free-icons/humidity" title="humidity icons">Humidity icons created by Freepik - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/forecast" title="forecast icons">Forecast icons created by ChilliColor - Flaticon</a>
+          <a href="https://www.flaticon.com/free-icons/temperature" title="temperature icons">Temperature icons created by Freepik - Flaticon</a></p>
+      </footer>
     </div>
   );
 }

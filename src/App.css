@@ -14,7 +14,7 @@
 }
 
 .divided-display{
-  background-color:rgb(94, 209, 209);
+  background-color:rgb(183, 216, 239);
   display: flex;
   min-height: 88vh;
 }
@@ -30,7 +30,6 @@
 }
 
 .info-box{
-  background-color:rgb(207, 201, 213);
   flex-basis: 40%;
   display: flex;
   flex-direction: column;
@@ -40,10 +39,48 @@
 .info-item{
   width: 70%;
   height: 12rem;
+  width: 20rem;
+  opacity: 50%;
+  background-repeat: no-repeat;
+}
+.info-text-weather{
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  line-height: 2.5rem;
+}
+.info-text-forex{
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  line-height: 1.9rem;
 }
 .info-weather{
-  background-color:rgb(193, 167, 218);
+ background-color: aliceblue;
+ height: 15rem;
+ width: 15rem;
+ border: 3px solid black;
+}
+
+.bcg{
+  opacity: 50%;
+  height: 5erm;
+  width:5rem;
 }
 .info-forex{
-  background-color:rgb(196, 172, 192);
+ background-color: aliceblue;
+ opacity: 50%;
+ height: 15rem;
+ width: 15rem;
+ border: 3px solid black;
+}
+
+.coin-icon{
+  height: 1.1rem;
+  background-color:none;
+  margin-right: 0.25rem;
 }

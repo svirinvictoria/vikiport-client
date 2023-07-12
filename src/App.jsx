@@ -46,14 +46,17 @@ function App() {
           <div className="cartoon-item">
             {cartoon}
           </div>
+          {/* <div className="cartoon-item">
+            {cartoon}
+          </div> */}
           
         </div>
         <div className="info-box">
-          <div className="info-weather info-item info-text-weather">
+          <div className="info info-item info-text-weather">
             <div> <img src={forecast} className='bcg'/></div>
             {weather}
           </div>
-          <div className="info-forex info-item info-text-forex">
+          <div className="info info-item info-text-forex">
             <div> <img src={forex_img} className='bcg'/></div>
             {forex}
           </div>

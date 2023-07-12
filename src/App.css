@@ -14,13 +14,13 @@
 }
 
 .divided-display{
-  background-color:rgb(183, 216, 239);
+  background-color:rgb(146, 198, 236);
   display: flex;
   min-height: 88vh;
 }
 
 .cartoons-box{
-  background-color: rgba(181, 185, 181, 0.924);
+  background-color: rgba(63, 160, 187, 0.924);
  flex-basis: 60%;
 }
 .cartoon-item{
@@ -59,24 +59,18 @@
   padding-top: 1rem;
   line-height: 1.9rem;
 }
-.info-weather{
+.info{
  background-color: aliceblue;
  height: 15rem;
  width: 15rem;
  border: 3px solid black;
+ border-radius: 4%;
 }
 
 .bcg{
-  opacity: 50%;
+  opacity: 80%;
   height: 5erm;
   width:5rem;
-}
-.info-forex{
- background-color: aliceblue;
- opacity: 50%;
- height: 15rem;
- width: 15rem;
- border: 3px solid black;
 }
 
 .coin-icon{

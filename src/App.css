@@ -14,46 +14,30 @@
   color:rgb(88, 86, 86);
   padding-top: 2%;
   padding-bottom: 2%;
+  position: relative;
 }
 
-.divided-display{
+.header {
+  cursor: pointer;
+}
+
+.header-btn{
+  position:absolute;
+  top: 25%;
+  right: 3%;
+  background-color: rgb(88, 86, 86);;
+  border: 1.5px solid gray ;
+  border-radius: 4px;
+  height: 2.5rem;
+  color:aliceblue;
+  font-weight: 600;
+  font-family: cursive;
+  cursor: pointer;
+}
+/* .divided-display{
   display: flex;
   min-height: 88vh;
 }
-
-.cartoons-box{
- display: flex;
- flex-wrap: wrap;
- justify-content: space-around;
- font-family:cursive;
- font-weight: 700;
- flex-basis: 80%;
- 
-}
-.cartoon-item{
-  background-color: lightgrey;
-  width: 9rem;
-  border: 2px solid rgb(88, 86, 86);
-  border-radius:5%;
-  margin: 5% 2% 2% 2%;
-}
-.cartoon-header{
-  height: 28%;
-  background-color: lightgrey;
-  padding-top: 4%;
- 
-}
-.cartoon-image{
-  height: 60%;
-  width: inherit;
-  border-radius:5%; 
-}
-
-.image-cartoon{
-  height: 100%;
-  width: inherit;
-}
-
 
 .info-box{
   flex-basis: 30%;
@@ -61,66 +45,32 @@
   flex-direction: column;
   align-items:center;
   justify-content: flex-start;
-}
-.info-item{
-  width: 70%;
-  height: 12rem;
-  width: 20rem;
-  opacity: 80%;
- margin-top: 12%;
- text-align: left;
- padding-left: 1rem;
- padding-top: 1rem;
-}
-.info-text-weather{
-  font-size: 1.3rem;
-  font-weight: 700;
-  line-height: 2.5rem;
-}
-.info-text-forex{
-  font-size: 1.1rem;
-  font-weight: 600;
-  line-height: 1.9rem;
-}
-.info{
- background-color: aliceblue;
- height: 15rem;
- width: 15rem;
- border: 3px solid rgb(88, 86, 86);
- border-radius: 4%;
-}
+} */
 
-.bcg{
-  opacity: 80%;
-  height: 5erm;
-  width:5rem;
-}
-
-.coin-icon{
-  height: 1.1rem;
-  background-color:none;
-  margin-right: 0.25rem;
-}
-
-footer{
+.ftr{
   background-color:	#c6dfea;
-  padding: 0.5%;
+  padding: 0.2%;
   margin-top: 3%;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  font-family: cursive;  
+  color:rgb(88, 86, 86);
+  font-weight: 800;
 }
 footer a{
   text-decoration: none;
   font-size: 70%;
-  color:rgb(88, 86, 86);;
- padding: 0;
- margin: 0;
+  color:rgb(88, 86, 86);
+ 
 }
 p{
   margin: 0;
-  font-weight: 700;
+  font-weight: 600;
 }
 
-@media screen and (max-width: 900px) {
-  .divided-display{
+/* @media screen and (max-width: 900px) {
+  /* .divided-display{
     display: flex;
     flex-direction: column-reverse;
   }
@@ -128,36 +78,16 @@ p{
     flex-direction: row;
     align-items:center;
     justify-content: space-around;
-  }
-  .info-item{
-   margin-top: 5%;
-  }
-}
+  } */
+/* } */ 
 
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
   .info-box{
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
     align-items:center;
     
-  }
-  .info-item{
-   margin-top: 4%;
-   text-align: left;
-   padding: 0.5rem;
-  }
-  .info-text-weather{
-    font-size: 0.9rem;
-    font-weight: 500;
-    line-height: 1.2rem;
-    height: 4rem;
-  }
-  .info-text-forex{
-    font-size: 0.9rem;
-    font-weight: 600;
-    line-height: 1rem;
-    height: 5rem;
   }
   .info{
    background-color: aliceblue;
@@ -168,14 +98,7 @@ p{
    flex-direction: row-reverse;
    justify-content: space-between;
   }
-  
-  .bcg{
-    height: 4rem;
-    width: 4rem;
+  .ftr{
+    display:block;
   }
-  
-  .coin-icon{
-    height: 0.8rem;
-    width: 0.8rem;
-  }
-}
+} */

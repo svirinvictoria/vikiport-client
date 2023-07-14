@@ -1,0 +1,34 @@
+.cartoons-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family:cursive;
+    font-weight: 700;
+    flex-basis: 80%;
+    
+   }
+   .cartoon-item{
+     background-color: lightgrey;
+     width: 9rem;
+     border: 2px solid rgb(88, 86, 86);
+     border-radius:5%;
+     margin: 5% 2% 2% 2%;
+   }
+   .cartoon-header{
+     height: 28%;
+     background-color: lightgrey;
+     padding-top: 4%;
+    
+   }
+   .image-box{
+     height: 60%;
+     width: inherit;
+     border-radius:5%; 
+   }
+   
+   .image-cartoon{
+     height: 100%;
+     width: inherit;
+   }
+   
+   

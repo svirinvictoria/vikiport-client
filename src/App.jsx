@@ -1,93 +1,80 @@
-import React, { useEffect, useState } from "react";
-import { useProxy } from "./useProxy";
+import React from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
+
+import ErrorPage from "./components/ErrorPage";
+import Info from "./components/routing/info/Info";
+import Content from "./components/routing/content/Content";
+
 import "./App.css";
-import forecast from "./img/forecast.png";
-import forex_img from "./img/forex.png";
 
 function App() {
-  const proxy = useProxy();
-  const [weather, setWeather] = useState([]); //weather info
-  const [forex, setForex] = useState([]); //forex info
-  const [cartoonList, setCartoonList] = useState([]); //cartoon collection
-
-  useEffect(() => {
-    async function fetchData() {
-      const weatherData = await proxy.updateWeatherPr(); //getting weather from the server
-      setWeather(weatherData);
-
-      const forexData = await proxy.updateForexPr(); //getting forex from the server
-      setForex(forexData);
-
-      const cartoonCollection = await proxy.updateCartoonPr(); //getting cartoons collection from the server
-      // cartoonCollection = array of ojects
-
-      const cartoonElements = cartoonCollection.map((item) => {
-        return (
-          <div key={item.id} className="cartoon-item">
-            <div className="cartoon-header">{item.name}</div>
-            <div className="cartoon-image">
-              <img className="image-cartoon" src={item.image} alt=""/></div>
-          </div>
-        );
-      });
-      //cartoonElements = array of elements
-
-      setCartoonList(cartoonElements);
-      // cartoonList = array of elements
-    }
-
-    fetchData();
-
-    // eslint-disable-next-line
-  }, []);
+  const navigate = useNavigate();
+  const goToInfoHandler = () => navigate("/in");
+  const goToContentPage = () => navigate("/");
 
   return (
     <div className="App">
       <header className="App-header">
-        <div>Vikiport</div>
+        <div className="header" onClick={goToContentPage}>Vikiport</div>
+        <button className="header-btn" onClick={goToInfoHandler}>About this site
+        </button>
       </header>
 
-      <div className="divided-display">
-        <div className="cartoons-box">{cartoonList}</div>
-
-        <div className="info-box">
-          <div className="info info-item info-text-weather">
-            <div>
-              {" "}
-              <img src={forecast} className="bcg" alt="" />
-            </div>
-            {weather}
-          </div>
-          <div className="info info-item info-text-forex">
-            <div>
-              {" "}
-              <img src={forex_img} className="bcg" alt=""/>
-            </div>
-            {forex}
-          </div>
-        </div>
+      <div>
+        <Routes>
+          <Route path="/" element={<Content />} />
+          <Route path="/in" element={<Info />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
       </div>
-      <footer>
+
+      {/* <div className="divided-display">
+          <Cartoon cartoonList={cartoonList}/>
+        <div className="info-box">
+          <Weather weather={weather}/>
+          <Forex forex={forex}/>
+        </div>
+      </div> */}
+
+      <footer className="ftr">
+        <div>
           <p>
-          &copy; All rights reserved to Victoria Svirin 2023
-          </p>
-        <p>
-          <a
-            href="https://www.flaticon.com/free-icons/forex"
-            title="forex icons"
-          >
-            Forex icons created by juicy_fish - Flaticon
-          </a>
+            <a href="https://api.currencyapi.com">
+              Exchange rate is taken from currencyapi.com
+            </a>
           </p>
           <p>
-          <a
-            href="https://www.flaticon.com/free-icons/forecast"
-            title="forecast icons"
-          >
-            Forecast icons created by ChilliColor - Flaticon
-          </a>
+            <a href="https://api.openweathermap.org">
+              Weather forecast is taken from openweathermap.org
+            </a>
           </p>
-          
+          <p>
+            <a href="https://rickandmortyapi.com/api/character">
+              Cartoons are taken from rickandmortyapi.com
+            </a>
+          </p>
+        </div>
+        <div>
+          <p>&copy; All rights reserved to Victoria Svirin 2023</p>
+        </div>
+        <div>
+          <p>
+            <a
+              href="https://www.flaticon.com/free-icons/forex"
+              title="forex icons"
+            >
+              Forex icons created by juicy_fish - Flaticon
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://www.flaticon.com/free-icons/forecast"
+              title="forecast icons"
+            >
+              Forecast icons created by ChilliColor - Flaticon
+            </a>
+          </p>
+        </div>
       </footer>
     </div>
   );

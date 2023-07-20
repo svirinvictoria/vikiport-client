@@ -1,11 +1,4 @@
-import env from "react-dotenv";
-
-console.log(env.SERVER_DOMAIN_URL);
-
 const configData = {
-  serverDomainUrl: env.SERVER_DOMAIN_URL
+  serverDomainUrl: "https://vikiport-server.onrender.com/"
 };
-
-
-
 export default configData

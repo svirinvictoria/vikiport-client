@@ -1,6 +1,6 @@
-import "./Info.css"
+import "./InfoPage.css"
 
-function Info(){
+function InfoPage(){
     return(
         <p className="inf">
             This is explanation about the site
@@ -8,4 +8,4 @@ function Info(){
     )
 }
 
-export default Info;
+export default InfoPage;

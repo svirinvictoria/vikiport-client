@@ -1,12 +1,11 @@
+import forex_img from "../../images/forex.png";
+import usd_img from "../../images/usd.png";
+import eur_img from "../../images/eur.png";
+import pound_img from "../../images/pound.png";
+import yen_img from "../../images/yen.png";
+import shekel_img from "../../images/shekel.png";
 
 import "./Forex.css";
-import forex_img from "../../img/forex.png";
-import usd_img from "../../img/usd.png";
-import eur_img from "../../img/eur.png";
-import pound_img from "../../img/pound.png";
-import yen_img from "../../img/yen.png";
-import shekel_img from "../../img/shekel.png";
-
 
 function Forex(props){
 

@@ -1,4 +1,4 @@
-import forecast from "../../images/forecast.png";
+import forecast from "../../images/weather-icon.png";
 
 import "./WeatherInfo.scss";
 
@@ -12,11 +12,10 @@ function WeatherInfo (props){
 
     return(
         <div className="info info-item info-text-weather">
-            <div>
-              {" "}
+            <div className="forecastImage">
               <img src={forecast} className="bcg" alt="" />
             </div>
-            {weatherElements}
+            <div>{weatherElements}</div>
           </div>
     )
 }

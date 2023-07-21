@@ -2,11 +2,15 @@
   font-size: 1.3rem;
   font-weight: 700;
   line-height: 2.5rem;
-
-  .bcg {
-    opacity: 80%;
-    height: 5rem;
-    width: 5rem;
+  .forecastImage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .bcg {
+      opacity: 80%;
+      height: 5rem;
+    }
   }
 
   @media screen and (max-width: 700px) {
@@ -14,7 +18,7 @@
     font-weight: 500;
     line-height: 1.2rem;
     height: 4rem;
-    
+
     .bcg {
       height: 4rem;
       width: 4rem;

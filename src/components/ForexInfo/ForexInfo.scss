@@ -2,17 +2,21 @@
   font-size: 1.1rem;
   font-weight: 600;
   line-height: 1.9rem;
-
+  .forexImage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .bcg {
+      opacity: 80%;
+      height: 5rem;
+      width: 5rem;
+    }
+  }
   .coin-icon {
     height: 1.1rem;
     background-color: none;
     margin-right: 0.25rem;
-  }
-
-  .bcg {
-    opacity: 80%;
-    height: 5rem;
-    width: 5rem;
   }
 
   @media screen and (max-width: 700px) {

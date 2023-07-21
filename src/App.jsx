@@ -1,13 +1,13 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 
-import ErrorPage from "./pages/ErrorPage/ErrorPage";
-import InfoPage from "./pages/InfoPage/InfoPage";
-import HomePage from "./pages/HomePage/HomePage";
-import PersonPage from "./pages/PersonPage/PersonPage";
+import ErrorPage from "./pages/error/ErrorPage";
+import InfoPage from "./pages/info/InfoPage";
+import HomePage from "./pages/home/HomePage";
+import PersonPage from "./pages/person/PersonPage";
 
 import "./App.scss";
 

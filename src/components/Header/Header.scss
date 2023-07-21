@@ -7,13 +7,19 @@
   font-family: cursive;
   font-weight: 900;
   letter-spacing: 5px;
-  color: rgb(88, 86, 86);
   padding-top: 1%;
   padding-bottom: 2%;
   position: relative;
 
   .title {
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+
+    img {
+      margin-left: 10px;
+      height: 3rem;
+    }
   }
 
   .header-btn {

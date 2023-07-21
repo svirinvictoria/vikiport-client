@@ -7,8 +7,8 @@ const Header = () => {
   const goToContentPage = () => navigate("/");
 
   return (
-    <header className="App-header">
-      <div className="header" onClick={goToContentPage}>
+    <header className="header">
+      <div className="title" onClick={goToContentPage}>
         Vikiport
       </div>
       <button className="header-btn" onClick={goToInfoHandler}>

@@ -5,9 +5,9 @@ import pound_img from "../../images/pound.png";
 import yen_img from "../../images/yen.png";
 import shekel_img from "../../images/shekel.png";
 
-import "./Forex.scss";
+import "./ForexInfo.scss";
 
-function Forex(props){
+function ForexInfo(props){
 
     const forexElements =  props.forex ? <div>
       <div>
@@ -44,4 +44,4 @@ function Forex(props){
     )
 }
 
-export default Forex;
+export default ForexInfo;

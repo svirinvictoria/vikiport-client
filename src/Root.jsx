@@ -9,11 +9,11 @@ import InfoPage from "./pages/InfoPage/InfoPage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import PersonPage from "./pages/PersonPage/PersonPage";
 
-import "./App.scss";
+import "./Root.scss";
 
-function App() {
+function Root() {
   return (
-    <div className="App">
+    <div className="Root">
       <Header />
       <div className="content">
         <Routes>
@@ -28,4 +28,4 @@ function App() {
   );
 }
 
-export default App;
+export default Root;

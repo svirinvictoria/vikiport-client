@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from "react";
 import { useProxy } from "../../hooks/useProxy";
 
-import Forex from "../../components/Forex/Forex";
-import Weather from "../../components/Weather/Weather";
-import Cartoon from "../../components/Cartoon/Cartoon";
+import ForexInfo from "../../components/ForexInfo/ForexInfo";
+import WeatherInfo from "../../components/WeatherInfo/WeatherInfo";
+import CartoonInfo from "../../components/CartoonInfo/CartoonInfo";
 import Spinner from "../../components/Spinner/Spinner";
 
 import "./HomePage.scss";
@@ -50,7 +50,7 @@ function HomePage() {
             <Spinner />
           </div>
         ) : (
-          <Cartoon cartoonList={cartoonList} />
+          <CartoonInfo cartoonList={cartoonList} />
         )}
 
         <div className="info-box">
@@ -59,7 +59,7 @@ function HomePage() {
               <Spinner />
             </div>
           ) : (
-            <Weather weather={weather} />
+            <WeatherInfo weather={weather} />
           )}
 
           {forexIsLoading ? (
@@ -67,7 +67,7 @@ function HomePage() {
               <Spinner />
             </div>
           ) : (
-            <Forex forex={forex} />
+            <ForexInfo forex={forex} />
           )}
         </div>
       </div>

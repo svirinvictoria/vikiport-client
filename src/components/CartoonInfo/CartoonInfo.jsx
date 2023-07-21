@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
-import "./Cartoon.scss";
+import "./CartoonInfo.scss";
 
-function Cartoon(props) {
+function CartoonInfo(props) {
   const cartoonElements = props.cartoonList
     ? props.cartoonList.map((item) => {
         return (
@@ -29,4 +29,4 @@ function Cartoon(props) {
   return <div className="cartoons-box">{cartoonElements}</div>;
 }
 
-export default Cartoon;
+export default CartoonInfo;

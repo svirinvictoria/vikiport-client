@@ -1,4 +1,4 @@
-import "./infopage.scss";
+import "./InfoPage.scss";
 
 function InfoPage(){
     return(

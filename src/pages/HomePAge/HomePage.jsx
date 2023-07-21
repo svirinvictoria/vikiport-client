@@ -7,7 +7,7 @@ import Weather from "../../components/Weather/Weather";
 import Cartoon from "../../components/Cartoon/Cartoon";
 import Spinner from "../../components/Spinner/Spinner";
 
-import "./homepage.scss";
+import "./HomePage.scss";
 
 function HomePage() {
   const proxy = useProxy();

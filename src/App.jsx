@@ -4,12 +4,12 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
-import ErrorPage from "./pages/ErrorPage/ErrorPage";
-import InfoPage from "./pages/InfoPage/InfoPage";
 import HomePage from "./pages/HomePage/HomePage";
+import InfoPage from "./pages/InfoPage/InfoPage";
+import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import PersonPage from "./pages/PersonPage/PersonPage";
 
-import "./app.scss";
+import "./App.scss";
 
 function App() {
   return (

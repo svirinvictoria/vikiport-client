@@ -1,7 +1,7 @@
-
+import "./Footer.scss";
 const Footer = () => {
     return (
-      <footer className="ftr">
+      <footer className="footer">
       <div>
         <p>
           <a href="https://api.currencyapi.com">
@@ -20,7 +20,7 @@ const Footer = () => {
         </p>
       </div>
       <div>
-        <p>&copy; All rights reserved to Victoria Svirin 2023</p>
+        <p> Viki 2023&copy;</p>
       </div>
       <div>
         <p>

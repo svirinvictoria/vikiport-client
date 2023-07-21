@@ -6,16 +6,16 @@ import Footer from "./components/Footer/Footer";
 
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import InfoPage from "./pages/InfoPage/InfoPage";
-import HomePage from "./pages/HomePAge/HomePage";
+import HomePage from "./pages/HomePage/HomePage";
 import PersonPage from "./pages/PersonPage/PersonPage";
 
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <div>
+      <div className="content">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/in" element={<InfoPage />} />

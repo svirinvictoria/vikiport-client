@@ -1,6 +1,6 @@
 import forecast from "../../images/forecast.png";
 
-import "./Weather.css";
+import "./Weather.scss";
 
 function Weather (props){
 

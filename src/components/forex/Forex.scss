@@ -1,0 +1,32 @@
+.info-text-forex {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.9rem;
+
+  .coin-icon {
+    height: 1.1rem;
+    background-color: none;
+    margin-right: 0.25rem;
+  }
+
+  .bcg {
+    opacity: 80%;
+    height: 5rem;
+    width: 5rem;
+  }
+
+  @media screen and (max-width: 700px) {
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1rem;
+    height: 5rem !important;
+    .bcg {
+      height: 4rem;
+      width: 4rem;
+    }
+    .coin-icon {
+      height: 0.8rem;
+      width: 0.8rem;
+    }
+  }
+}

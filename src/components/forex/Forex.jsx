@@ -5,7 +5,7 @@ import pound_img from "../../images/pound.png";
 import yen_img from "../../images/yen.png";
 import shekel_img from "../../images/shekel.png";
 
-import "./Forex.scss";
+import "./forex.scss";
 
 function Forex(props){
 

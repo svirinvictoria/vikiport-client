@@ -3,7 +3,7 @@ import React, {useEffect, useState} from "react";
 
 import { useProxy } from "../../hooks/useProxy";
 
-import "./PersonPage.scss";
+import "./personpage.scss";
 
 function PersonPage (){
     const proxy= useProxy();

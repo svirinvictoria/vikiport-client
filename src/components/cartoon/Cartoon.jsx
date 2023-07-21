@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import "./Cartoon.scss";
+import "./cartoon.scss";
 
 function Cartoon(props) {
   const cartoonElements = props.cartoonList

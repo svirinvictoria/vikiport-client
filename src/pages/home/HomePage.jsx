@@ -2,12 +2,12 @@
 import React, { useEffect, useState } from "react";
 import { useProxy } from "../../hooks/useProxy";
 
-import Forex from "../../components/forex/Forex";
-import Weather from "../../components/weather/Weather";
-import Cartoon from "../../components/cartoon/Cartoon";
-import Spinner from "../../components/spinner/Spinner";
+import Forex from "../../components/forex/forex";
+import Weather from "../../components/weather/weather";
+import Cartoon from "../../components/cartoon/cartoon";
+import Spinner from "../../components/spinner/spinner";
 
-import "./HomePage.scss";
+import "./homepage.scss";
 
 function HomePage() {
   const proxy = useProxy();

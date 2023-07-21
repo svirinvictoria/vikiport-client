@@ -21,6 +21,8 @@ const Footer = () => {
       </div>
       <div>
         <p> Viki 2023&copy;</p>
+        <p><a href="https://github.com/svirinvictoria/vikiport-client">Client Repo is here</a></p>
+        <p><a href="https://github.com/svirinvictoria/vikiport-server">Server Repo is here</a></p>
       </div>
       <div>
         <p>

@@ -16,12 +16,13 @@ function Root() {
     <div className="Root">
       <Header />
       <div className="content">
-        <Routes>
+        <div>Comming Soon</div>
+        {/* <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/in" element={<InfoPage />} />
           <Route path="/person/:id" element={<PersonPage />} />
           <Route path="*" element={<ErrorPage />} />
-        </Routes>
+        </Routes> */}
       </div>
       <Footer />
     </div>

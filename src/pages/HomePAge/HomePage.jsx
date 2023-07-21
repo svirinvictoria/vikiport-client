@@ -2,10 +2,10 @@
 import React, { useEffect, useState } from "react";
 import { useProxy } from "../../hooks/useProxy";
 
-import Forex from "../../components/forex/forex";
-import Weather from "../../components/weather/weather";
-import Cartoon from "../../components/cartoon/cartoon";
-import Spinner from "../../components/spinner/spinner";
+import Forex from "../../components/Forex/Forex";
+import Weather from "../../components/Weather/Weather";
+import Cartoon from "../../components/Cartoon/Cartoon";
+import Spinner from "../../components/Spinner/Spinner";
 
 import "./homepage.scss";
 

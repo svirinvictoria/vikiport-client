@@ -4,17 +4,17 @@ const Footer = () => {
     <footer className="footer">
       <div>
         <p className="ftr-link">
-          <a href="https://api.currencyapi.com">
+          <a href="https://api.currencyapi.com/">
             Exchange rate is taken from currencyapi.com
           </a>
         </p>
         <p className="ftr-link">
-          <a href="https://api.openweathermap.org">
+          <a href="https://api.openweathermap.org/">
             Weather forecast is taken from openweathermap.org
           </a>
         </p>
         <p className="ftr-link">
-          <a href="https://rickandmortyapi.com">
+          <a href="https://rickandmortyapi.com/">
             Cartoons are taken from rickandmortyapi.com
           </a>
         </p>

@@ -4,7 +4,7 @@ const Footer = () => {
     <footer className="footer">
       <div>
         <p className="ftr-link">
-          <a href="https://api.currencyapi.com/">
+          <a href="https://currencyapi.com/">
             Exchange rate is taken from currencyapi.com
           </a>
         </p>

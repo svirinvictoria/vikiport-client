@@ -15,8 +15,8 @@ function CartoonInfo(props) {
                 <div className="cartoon-header">
                   <span>{item.name}</span>
                 </div>
-                <div className="image-box">
-                  <img className="image-cartoon" src={item.image} alt="" />
+                <div className="image-box">   
+                  {/* <img className="image-cartoon" src={item.image} alt="" /> */}
                 </div>
               </div>
             </div>

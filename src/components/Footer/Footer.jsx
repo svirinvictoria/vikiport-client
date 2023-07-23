@@ -14,7 +14,7 @@ const Footer = () => {
           </a>
         </p>
         <p className="ftr-link">
-          <a href="https://rickandmortyapi.com/api/character">
+          <a href="https://rickandmortyapi.com">
             Cartoons are taken from rickandmortyapi.com
           </a>
         </p>

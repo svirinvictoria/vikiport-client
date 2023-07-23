@@ -24,7 +24,8 @@ function PersonPage (){
     return (
         <div className="page-display">
             <div className="image-frame">
-            <img className="image-single" src={character.image} alt="" />
+                Picture of {character.name}
+            {/* <img className="image-single" src={character.image} alt="" /> */}
             </div>
             <div className="image-data">
                 <ul>

@@ -4,6 +4,16 @@
   .image-frame {
     flex-basis: 50%;
     padding-top: 7%;
+    background-color:   lightgrey;
+    font-size: 24px;
+    height: 20vh;
+    padding-left: 0;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5%;
+    border: 2.5px solid rgb(106, 102, 102);
+    border-radius: 15px;
+
     .image-single {
       padding-left: 0;
       margin-left: 0;
